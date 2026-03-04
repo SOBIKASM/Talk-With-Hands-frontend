@@ -126,7 +126,7 @@ export default function UserGuide() {
             </div>
             <div>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1684459567928-d50c76f5d8a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaWduJTIwbGFuZ3VhZ2UlMjBoYW5kJTIwZ2VzdHVyZXxlbnwxfHx8fDE3NTg3NzQxMDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/love.jpg"
                 alt="Sign language demonstration"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -187,9 +187,9 @@ export default function UserGuide() {
                 
                 <div className="mb-4">
                   <ImageWithFallback
-                    src={getSignPlaceholder(sign.letter)}
+                    src={`/alphabet_images/${sign.letter}.jpg`}
                     alt={`Sign language letter ${sign.letter}`}
-                    className="w-full h-32 object-cover rounded-lg bg-muted"
+                    className="w-full h-full object-cover rounded-lg bg-muted"
                   />
                 </div>
                 
@@ -212,24 +212,7 @@ export default function UserGuide() {
         </CardContent>
       </Card>
 
-      {/* ASL Alphabet Reference */}
-      <Card>
-        <CardHeader>
-          <CardTitle>American Sign Language Alphabet</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="text-center">
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1693168058181-7781540896d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbWVyaWNhbiUyMHNpZ24lMjBsYW5ndWFnZSUyMGFscGhhYmV0fGVufDF8fHx8MTc1ODcxNjE0Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="American Sign Language Alphabet Chart"
-              className="max-w-2xl mx-auto rounded-lg shadow-sm"
-            />
-            <p className="text-sm text-muted-foreground mt-4">
-              Complete ASL alphabet reference chart. Practice these gestures to improve recognition accuracy.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+     
     </div>
   );
 }

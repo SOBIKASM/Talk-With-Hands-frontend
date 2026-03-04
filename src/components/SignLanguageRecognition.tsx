@@ -104,7 +104,7 @@ export default function SignLanguageRecognition() {
           setSentences([]);
           setLetters([]);
           setWords([]);
-        } else if (["HI", "MY"].includes(receivedLetter)) {
+        } else if (["MY"].includes(receivedLetter)) {
           setCurrentSentence((prev) => (prev ? prev + ' ' : '') + receivedLetter);
           setCurrentLetter('');
         } else if (receivedLetter) {
@@ -351,9 +351,6 @@ export default function SignLanguageRecognition() {
           </div>
         </CardContent>
       </Card>
-      
-      
-
     </div>
   );
 }
